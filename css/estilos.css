@@ -1,3 +1,61 @@
+/** Header **/
+
+.site-header.inicio {
+    background-image: url(../img/hero.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+}
+
+
+/** Nombre encabezado sitio**/
+
+.nombre-encabezado-sitio {
+    color: #343a40!important;
+    font-size: 2.7rem;
+}
+
+.nombre-encabezado-sitio:hover {
+    text-decoration: none;
+}
+
+
+/** Texto Header **/
+
+.texto-header {
+    color: #ffffff;
+    padding-top: 2rem;
+    text-align: center;
+}
+
+@media (min-width: 576px) {
+    .texto-header {
+        padding-top: 6rem;
+    }
+}
+
+.display-3 {
+    font-size: 3.2rem;
+}
+
+@media (min-width: 440px) {
+    .display-3 {
+        font-size: 4.5rem;
+    }
+}
+
+.tecnologias {
+    margin-bottom: 0;
+}
+
+@media (min-width: 350px) {
+    .tecnologias {
+        margin-bottom: 1.5rem;
+    }
+}
+
+
 /** Sociales **/
 
 .sociales ul {
@@ -18,9 +76,8 @@
     padding: 0.4rem;
     content: '\f08e';
     -webkit-font-smoothing: antialiased;
-    font-size: 2rem;
-    /*color: #010409;*/
-    color: #ffffff;
+    font-size: 2.5rem;
+    color: #343a40!important;
 }
 
 .sociales ul li a[href*="github.com"]::before {
@@ -41,4 +98,78 @@
 
 .text-primary {
     color: #212529 !important;
+}
+
+
+/** Botón de header **/
+
+.btn-primary {
+    background-color: #0060e8;
+    border-color: #0060e8;
+}
+
+.btn-primary:hover {
+    background-color: #0042bf;
+    border-color: #0042bf;
+}
+
+
+/**Encabezados de secciones **/
+
+.encabezado {
+    font-size: 2.5rem;
+}
+
+.descripcion-encabezado {
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+
+/** Sección sobre Mí**/
+
+.texto-sobre-mi {
+    font-size: 1.1rem;
+}
+
+.palabra-destacada {
+    font-weight: bold;
+}
+
+
+/** Sección portafolio **/
+
+.portafolio {
+    background-size: cover;
+}
+
+.portafolio .encabezado {
+    color: #ffffff;
+}
+
+
+/** Sección contacto **/
+
+.titulo-forma-contacto {
+    color: #0060e8;
+    font-size: 2.5rem;
+}
+
+.correo {
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+
+/** Footer **/
+
+.texto-footer {
+    padding-top: 0rem;
+    margin-top: 0;
+}
+
+@media (min-width: 768px) {
+    .texto-footer {
+        padding-top: 1rem;
+    }
 }

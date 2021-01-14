@@ -16,71 +16,285 @@
 
 <body>
 
-    <div class=" bg-dark">
-        <div class="encabezado-sitio container">
-            <div class="row justify-content-md-between">
-                <div class="col-lg-6">
+    <div class="site-header inicio">
+        <div class="bg-white">
+            <div class="encabezado-sitio container">
+                <div class="row justify-content-md-between">
+                    <div class="col-lg-4 text-center">
+                        <a class="nombre-encabezado-sitio text-dark" href="index.html">
+                            Miguel Nequiz
+                        </a>
+                    </div>
+                    <div class="col-lg-4">
+                        <nav class="sociales text-center text-lg-right">
+                            <ul>
+                                <li>
+                                    <a href="https://www.linkedin.com/in/amnm/">
+                                        <span class="sr-only">LinkedIn</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://github.com/nekixito">
+                                        <span class="sr-only">Github</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.youtube.com/user/nekixito">
+                                        <span class="sr-only">Youtube</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
 
-                </div>
-                <div class="col-lg-6">
-                    <nav class="sociales text-center text-lg-right">
-                        <ul>
-                            <li>
-                                <a href="http://linkedin.com">
-                                    <span class="sr-only">LinkedIn</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="http://github.com">
-                                    <span class="sr-only">Github</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="http://youtube.com">
-                                    <span class="sr-only">Youtube</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
             </div>
-
         </div>
-    </div>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container">
 
-            <a class="navbar-brand" href="/"><strong>Miguel</strong> Nequiz</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+
+
+
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+            <div class="container d-flex flex-column">
+                <!--
+                    <a class="navbar-brand" href="/"><strong>Miguel</strong> Nequiz</a>
+                -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ml-auto text-center">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Sobre Mí</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Portafolio</a>
+                <div class="collapse navbar-collapse w-100" id="navbarSupportedContent">
+                    <ul class="navbar-nav  nav-justified w-100 flex-sm-row text-center text-uppercase">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#sobre-mi">Sobre Mí</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#portafolio">Portafolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contacto">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="texto-header">
+            <h2 class="display-3">
+                Desarrollador
+            </h2>
+            <p class="p-2 tecnologias">
+                HTML - CSS - JavaScript - Bootstrap - MySQL - PHP - Java - Git
+            </p>
+            <p><a href="#sobre-mi" class="btn btn-primary btn-lg text-uppercase" role="button">Más Detalles</a></p>
+        </div>
 
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">Proyecto 1</a>
-                            <a class="dropdown-item" href="#">Proyecto 2</a>
-                            <a class="dropdown-item" href="#">Proyecto 3</a>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contacto</a>
-                    </li>
-                </ul>
+    </div>
+
+    <!-- Sección Sobre Mi-->
+
+    <section class="sobre-mi py-5" id="sobre-mi">
+        <h2 class="text-uppercase mt-3 encabezado">
+            <span class="text-center d-block">Sobre Mí</span>
+        </h2>
+        <p class="text-center mt-2 text-capitalize descripcion-encabezado">Datos Sobresalientes y Habilidades.</p>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-5 text-center d-flex justify-content-center">
+                    <img src="img/Miguel.svg" class="img-fluid" alt="">
+                </div>
+                <div class="col-12 col-md-7 text-center text-md-left align-self-md-center texto-sobre-mi">
+                    <p>Soy un desarrollador con conocimiento de las bases de <span class="palabra-destacada">HTML</span>, <span class="palabra-destacada">CSS</span>, <span class="palabra-destacada">JavaScript</span>, <span class="palabra-destacada">Bootstrap</span>                        y de <span class="palabra-destacada">backend</span> con <span class="palabra-destacada">PHP</span>.</p>
+
+                    <p> Desarrollo de aplicaciones de escritorio con <span class="palabra-destacada">Java</span> y conocimiento básico de <span class="palabra-destacada">Servlets</span> y <span class="palabra-destacada">JSP</span></p>
+
+                    <p>Tengo conocimiento en <span class="palabra-destacada">Git</span>, también de bases de datos con <span class="palabra-destacada">MySQL</span> y de los sistemas operativos <span class="palabra-destacada">Linux</span> y <span class="palabra-destacada">Windows</span>.</p>
+
+                    <p>Instalación, configuración y gestión de sitios con <span class="palabra-destacada">Wordpress</span>.</p>
+
+                    <p><span class="palabra-destacada">Inglés</span>: conversacional básico y comprensión de lectura intermedio.</p>
+
+                    <p>Experiencia en Soporte Técnico realizando trabajo de configuración, instalación, mantenimiento correctivo y preventivo pero ahora estoy enfocado en el <span class="palabra-destacada">Desarrollo de Software</span>.</p>
+                </div>
             </div>
         </div>
-    </nav>
+    </section>
+
+    <!-- Sección Portafolio -->
+
+    <section class="portafolio container-fluid py-5 bg-dark" id="portafolio">
+        <h2 class="text-uppercase mt-3 encabezado">
+            <span class="d-block text-center ">Portafolio</span>
+        </h2>
+        <p class="text-center mt-2 text-white text-capitalize descripcion-encabezado">Proyectos Realizados</p>
+        <div class="row py-4 text-center">
+            <div class="col-12  col-sm-6 col-md-4 mb-4">
+                <div class="card">
+                    <img class="card-img-top h-100" src="img/proyecto.png" alt="Proyeto 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Proyecto 1</h5>
+                        <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum sed facere, quae iusto perspiciatis velit tenetur omnis nesciunt dicta reprehenderit distinctio obcaecati dignissimos, enim rerum neque reiciendis saepe minus ad?</p>
+                        <a href="#" class="btn btn-primary text-uppercase">Ver Detalles</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4  mb-4">
+                <div class="card">
+                    <img class="card-img-top h-100" src="img/proyecto.png" alt="Proyeto 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Proyecto 2</h5>
+                        <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum sed facere, quae iusto perspiciatis velit tenetur omnis nesciunt dicta reprehenderit distinctio obcaecati dignissimos, enim rerum neque reiciendis saepe minus ad?</p>
+                        <a href="#" class="btn btn-primary text-uppercase">Ver Detalles</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4  mb-4">
+                <div class="card">
+                    <img class="card-img-top h-100" src="img/proyecto.png" alt="Proyeto 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Proyecto 3</h5>
+                        <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum sed facere, quae iusto perspiciatis velit tenetur omnis nesciunt dicta reprehenderit distinctio obcaecati dignissimos, enim rerum neque reiciendis saepe minus ad?</p>
+                        <a href="#" class="btn btn-primary text-uppercase">Ver Detalles</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
+                <div class="card">
+                    <img class="card-img-top h-100" src="img/proyecto.png" alt="Proyeto 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Proyecto 4</h5>
+                        <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum sed facere, quae iusto perspiciatis velit tenetur omnis nesciunt dicta reprehenderit distinctio obcaecati dignissimos, enim rerum neque reiciendis saepe minus ad?</p>
+                        <a href="#" class="btn btn-primary text-uppercase">Ver Detalles</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4  mb-4">
+                <div class="card">
+                    <img class="card-img-top h-100" src="img/proyecto.png" alt="Proyeto 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Proyecto 5</h5>
+                        <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum sed facere, quae iusto perspiciatis velit tenetur omnis nesciunt dicta reprehenderit distinctio obcaecati dignissimos, enim rerum neque reiciendis saepe minus ad?</p>
+                        <a href="#" class="btn btn-primary text-uppercase">Ver Detalles</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
+                <div class="card">
+                    <img class="card-img-top h-100" src="img/proyecto.png" alt="Proyeto 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Proyecto 6</h5>
+                        <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum sed facere, quae iusto perspiciatis velit tenetur omnis nesciunt dicta reprehenderit distinctio obcaecati dignissimos, enim rerum neque reiciendis saepe minus ad?</p>
+                        <a href="#" class="btn btn-primary text-uppercase">Ver Detalles</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Sección Contacto-->
+
+    <section class="contacto py-5" id="contacto">
+        <h2 class="text-uppercase mt-3 encabezado">
+            <span class="text-center d-block text-uppercase ">Contacto</span>
+        </h2>
+        <p class="text-center mt-2 text-capitalize descripcion-encabezado">Formas de encontrarme</p>
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-12 col-lg-6 border p-3">
+                    <p class="titulo-forma-contacto display-4 text-capitalize">Por Email:</p>
+                    <p class="correo display-3 pb-3"><strong>nekixito@gmail.com</strong> </p>
+                    <hr>
+                    <p class="titulo-forma-contacto display-4 text-capitalize pt-2">Por Redes Sociales:</p>
+                    <p>
+                        <nav class="sociales pt-2">
+                            <ul>
+                                <li>
+                                    <a href="https://www.linkedin.com/in/amnm/">
+                                        <span class="sr-only">LinkedIn</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://github.com/nekixito">
+                                        <span class="sr-only">Github</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.youtube.com/user/nekixito">
+                                        <span class="sr-only">Youtube</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </p>
+                </div>
+                <form class="formulario col-12 col-lg-6 border p-3">
 
 
+                    <p class="titulo-forma-contacto display-4 text-capitalize">Por mensaje:</p>
+
+                    <div class="form-group">
+                        <label for="formGroupExampleInput">Nombre</label>
+                        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Nombre">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Email</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Correo electrónico">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="exampleFormControlTextarea1">Mensaje:</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+                </form>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+
+    <footer class="footer bg-dark d-flex justify-content-between">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+                        <div class="container d-flex flex-column">
+                            <div class="w-100  " id="navbarSupportedContent">
+                                <ul class="navbar-nav  nav-justified w-100 flex-sm-row text-center text-uppercase">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Inicio</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#sobre-mi">Sobre Mí</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#portafolio">Portafolio</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#contacto">Contacto</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+                <div class="col-12 text-center text-md-right col-md-6">
+                    <p class="texto-footer text-white ">
+                        Por Miguel Nequiz. Derechos Reservados&copy;
+                    </p>
+                </div>
+            </div>
+
+
+        </div>
+        </div>
+    </footer>
 
 
 
